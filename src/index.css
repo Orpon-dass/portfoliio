@@ -1,13 +1,134 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body,html {
+ margin:0px;
+ padding:0px;
+ box-sizing: border-box;
+}
+/* hero section css code */
+.container-padding{
+  padding: 0;
+}
+.hero-class{
+  height: 100vh;
+}
+.hero-left-side-bg{
+  background: url("./image/bgone.jpg");
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* padding: 0px; */
+  transition: all 1s ease-in-out;
+  /* opacity: 0.5; */
+}
+.overlay-color{
+  margin:0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.5;
+
+}
+.hero-right-side-bg{
+  background: url("./image/undraw_completed_tasks_vs6q.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* padding: 0px; */
+  height: 50vh;
+  transition: all 1s ease-in-out;
+}
+.hero-about-me h2{
+  color:#fff;
+  font-weight: 400;
+  font-family: 'Josefin Sans', sans-serif;
+}
+.hero-about-me{
+  position: relative;
+}
+.hero-about-me::before{
+  content:"";
+  position: absolute;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  z-index: -1;
+  background-color:#fff;
+  animation: about-pulse 2s infinite ;
+}
+.about-me-button{
+  cursor: pointer;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.after-animation-height{
+  height:100vh;
 }
+.cross-icon-div{
+  background-color: rgba(255, 255, 255, 0.3);
+  -webkit-backdrop-filter: blur(10px);
+  height:45px;
+  width:45px;
+  border-radius:30px;
+}
+.cross-image{
+  color:black;
+  font-size: 1.5rem;
+ 
+}
+.cross-image:hover{
+  color:rgb(240, 29, 29);
+  font-size: 1.5rem;
+}
+.hero-right-wraper{
+  background-color: red;
+}
+.hero-skill{
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 600;
+}
+.hero-country{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1rem;
+}
+.btn-custom-color{
+  background-color: #6C63FF;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.one{
+  background-color: rosybrown;
+}
+.two{
+  background-color: royalblue;
+}
+
+
+
+
+
+
+
+
+/* animaition code */
+@keyframes about-pulse {
+  100%{
+    transform: scaleX(1.3) scaleY(1.7);
+    opacity: 0;
+  }
+}
+
+
+/* all media quires */
+@media (min-width: 576px) {
+  .hero-left-side-bg{
+    height:100vh;
+  }
+  .hero-right-side-bg{
+    height:100vh;
+  }
+  .btn-custom-color{
+    font-size: 1.5rem;
+  }
+ }

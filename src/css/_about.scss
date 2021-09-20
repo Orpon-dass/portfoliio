@@ -1,0 +1,74 @@
+.about{
+    // background-color: #171C32;
+    background-color:#030108;
+    height: 100%;
+}
+.about-height{
+height: 100%;
+}
+.about-wraper{
+    background-color:#252931;
+    // background-color:#252c48;
+    border-radius: 10px;
+}
+.about-text{
+    h1{
+        color:#fff;
+        font-family: 'Josefin Sans', sans-serif;
+
+        span{
+            color:#6C63FF;
+        }
+    }
+}
+.test-class{
+    background-color: red;
+}
+
+.info ul{
+    margin:0px;
+    padding:0px;
+}
+.info ul li{
+    list-style: none;
+    
+}
+.title{
+    color:#94A2C7;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+.value{
+    color:rgb(235, 224, 224);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+}
+.client-icon{
+    i{
+      color:#3f37e0;
+      font-size: 1.8rem;
+      font-weight: 600;
+      z-index: 1000;
+    }
+    height:60px;
+    width:60px;
+    border-radius:8px;
+    background-color: rgba(117, 107, 211, 0.15);  
+    backdrop-filter: blur(5px);
+}
+.number{
+    font-size:3rem;
+    color: rgb(235, 224, 224);
+    font-family: 'Josefin Sans', sans-serif;
+}
+.client-title{
+    color: rgb(235, 224, 224);
+    font-family: 'Josefin Sans', sans-serif;  
+}
+
+
+@media (min-width: 960px) {
+    .about{
+        height: 100vh;
+    }
+}

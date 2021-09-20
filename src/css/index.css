@@ -1,0 +1,363 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container-zero-padding {
+  padding: 0;
+}
+
+.hero-class {
+  height: 100vh;
+}
+
+.hero-left-bg {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../image/bgone.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../image/bgone.jpg");
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.cross-icon-div {
+  background-color: rgba(255, 255, 255, 0.3);
+  -webkit-backdrop-filter: blur(10px);
+  height: 45px;
+  width: 45px;
+  border-radius: 30px;
+}
+
+.cross-image {
+  color: black;
+  font-size: 1.5rem;
+}
+
+.cross-image:hover {
+  color: #921111;
+  font-size: 1.5rem;
+}
+
+.hero-about-me h2 {
+  color: #fff;
+  font-weight: 400;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.hero-about-me {
+  position: relative;
+}
+
+.hero-about-me::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #fff;
+  -webkit-animation: about-pulse 2s infinite;
+          animation: about-pulse 2s infinite;
+}
+
+.about-me-button {
+  cursor: pointer;
+}
+
+.right-part-bg {
+  background: url("../image/undraw_completed_tasks_vs6q.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 50vh;
+}
+
+.hero-skill {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 600;
+}
+
+.hero-country {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1rem;
+}
+
+.btn-custom-color {
+  background-color: #6C63FF;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.after-animation-height {
+  height: 100vh;
+}
+
+.click-animation {
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.my-name {
+  color: #fff;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 600;
+}
+
+.my-tag {
+  color: #d1cfcf;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+}
+
+/* animaition code */
+@-webkit-keyframes about-pulse {
+  100% {
+    -webkit-transform: scaleX(1.3) scaleY(1.7);
+            transform: scaleX(1.3) scaleY(1.7);
+    opacity: 0;
+  }
+}
+@keyframes about-pulse {
+  100% {
+    -webkit-transform: scaleX(1.3) scaleY(1.7);
+            transform: scaleX(1.3) scaleY(1.7);
+    opacity: 0;
+  }
+}
+
+@media (min-width: 576px) {
+  .hero-left-bg {
+    height: 100vh;
+  }
+  .right-part-bg {
+    height: 100vh;
+  }
+  .btn-custom-color {
+    font-size: 1.5rem;
+  }
+}
+
+.work {
+  height: 100vh;
+  background-color: aqua;
+}
+
+.click-work-animation {
+  -webkit-animation-name: workanimation;
+          animation-name: workanimation;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+}
+
+.work-trans {
+  -webkit-transition: width 3s ease;
+  transition: width 3s ease;
+}
+
+.my-work-title {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.my-work-title h1 {
+  color: #1b1b1b;
+}
+
+.my-work-title h4 {
+  color: #898989;
+}
+
+@-webkit-keyframes workanimation {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes workanimation {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.about {
+  background-color: #030108;
+  height: 100%;
+}
+
+.about-height {
+  height: 100%;
+}
+
+.about-wraper {
+  background-color: #252931;
+  border-radius: 10px;
+}
+
+.about-text h1 {
+  color: #fff;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.about-text h1 span {
+  color: #6C63FF;
+}
+
+.test-class {
+  background-color: red;
+}
+
+.info ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+.info ul li {
+  list-style: none;
+}
+
+.title {
+  color: #94A2C7;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.value {
+  color: #ebe0e0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+}
+
+.client-icon {
+  height: 60px;
+  width: 60px;
+  border-radius: 8px;
+  background-color: rgba(117, 107, 211, 0.15);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+
+.client-icon i {
+  color: #3f37e0;
+  font-size: 1.8rem;
+  font-weight: 600;
+  z-index: 1000;
+}
+
+.number {
+  font-size: 3rem;
+  color: #ebe0e0;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.client-title {
+  color: #ebe0e0;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+@media (min-width: 960px) {
+  .about {
+    height: 100vh;
+  }
+}
+
+.about-description-height {
+  height: 100%;
+  background-color: #030108;
+}
+
+.about-description-wraper h2 {
+  color: #ebe0e0;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.about-description-wraper p {
+  color: #d8cece;
+  font-family: 'Poppins', sans-serif;
+}
+
+.about-description-wraper .line {
+  height: 2px;
+  width: 40px;
+  background-color: burlywood;
+}
+
+.about-description-image-wraper img {
+  height: 400px;
+  width: 300px;
+}
+
+.social-icon-background {
+  background-color: burlywood;
+}
+
+.social-icon-background i {
+  color: black;
+  font-size: 1.5rem;
+}
+
+.social-icon-background i:hover {
+  color: #3f37e0;
+}
+
+@media (min-width: 576px) {
+  .about-description-height {
+    height: 100vh;
+  }
+}
+
+.skill-background {
+  background-color: #030108;
+}
+
+.skill-title-wraper .line {
+  height: 2px;
+  width: 40px;
+  background-color: burlywood;
+}
+
+.skill-title-wraper h1 {
+  color: #fff;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.skill-title-wraper h6 {
+  color: #d8cece;
+  font-family: 'Poppins', sans-serif;
+}
+
+.skill-percent h5 {
+  color: #d8cece;
+  font-family: 'Poppins', sans-serif;
+}
+
+.service-wraper {
+  background-color: #030108;
+}
+
+.service-title-wraper .line {
+  height: 2px;
+  width: 40px;
+  background-color: burlywood;
+}
+
+.service-title-wraper h1 {
+  color: #fff;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.service-title-wraper h6 {
+  color: #d8cece;
+  font-family: 'Poppins', sans-serif;
+}
+/*# sourceMappingURL=index.css.map */

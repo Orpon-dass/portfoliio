@@ -1,0 +1,53 @@
+.about-description-height{
+    height: 100%;
+    background-color: #030108;
+}
+.about-description-wraper{
+    h2{
+        color: rgb(235, 224, 224);
+        font-family: 'Josefin Sans', sans-serif;
+    }
+    p{
+        color: rgb(216, 206, 206);
+        font-family: 'Poppins', sans-serif;
+
+    }
+    .line{
+        height:2px;
+        width: 40px;
+        background-color: burlywood;
+    }
+}
+.about-description-image-wraper{
+    img{
+        height: 400px;
+        width: 300px;
+    }
+}
+.social-icon-background{
+    background-color: burlywood;
+    i{
+        color: black;
+        font-size: 1.5rem;
+    }
+    i:hover{
+        color: #3f37e0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 576px) {
+    .about-description-height{
+        height: 100vh;
+    }
+}

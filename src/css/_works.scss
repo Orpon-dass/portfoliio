@@ -1,0 +1,32 @@
+.work{
+    height: 100vh;
+    background-color: aqua;
+}
+ .click-work-animation{
+   animation-name: workanimation;
+   animation-duration: 4s;
+   animation-timing-function: ease;
+}
+.work-trans{
+    transition: width 3s ease;
+
+}
+.my-work-title{
+    font-family:'Josefin Sans', sans-serif;
+    h1{
+        color:#1b1b1b;
+    }
+    h4{
+        color:#898989;
+    }
+}
+
+@keyframes workanimation{
+    from{
+        width:0%;
+    }
+    to{
+       width:100%;
+
+    }
+}

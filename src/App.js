@@ -1,11 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React,{useEffect} from 'react'
+import Herosection from "./Component/Herosection";
+import AOS from "aos"
 function App() {
+  useEffect(() => {
+    AOS.init();
+  },[])
   return (
-    <>
-     <h1 className="text-center">hellow world</h1>
-    </>
+    <div>
+      <Herosection />
+    </div>
   );
 }
 
