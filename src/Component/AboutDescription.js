@@ -11,23 +11,23 @@ export default function AboutDescription() {
                         <p className="mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in. </p>
                         <div className="social-icon d-flex mt-5">
                              <div className="social-icon-background ps-2 pe-2">
-                             <a href=""> <i class="bi bi-facebook"></i></a>         
+                             <a href="https://www.facebook.com/orpondas.onutap/"> <i className="bi bi-facebook"></i></a>         
                              </div>
                              <div className="social-icon-background ms-3 ps-2 pe-2">
-                              <a href=""> <i class="bi bi-instagram"></i>  </a> 
+                              <a href="https://www.facebook.com/orpondas.onutap/"> <i className="bi bi-instagram"></i>  </a> 
                              </div>
                              <div className="social-icon-background ms-3 ps-2 pe-2">
-                              <a href=""> <i class="bi bi-github"></i> </a>   
+                              <a href="https://www.facebook.com/orpondas.onutap/"> <i className="bi bi-github"></i> </a>   
                              </div>
                              <div className="social-icon-background ms-3 ps-2 pe-2">
-                              <a href=""><i class="bi bi-linkedin"></i> </a>       
+                              <a href="https://www.facebook.com/orpondas.onutap/"><i className="bi bi-linkedin"></i> </a>       
                              </div>
                         </div>
                     </div>
                 </div>
                 <div className="col d-flex justify-content-center align-items-center mt-5 mt-md-0 mb-5 mb-md-0">
                     <div className="about-description-image-wraper pt-5 pt-md-0 pb-5 pb-md-0 border-2 border-start border-top">
-                       <img className="img-fluid" src={myImae} alt="image" />
+                       <img className="img-fluid" src={myImae} alt="userimage" />
                     </div>
                 </div>
             </div>  

@@ -7,6 +7,10 @@ import Test from './Test';
 import AboutDescription from './AboutDescription';
 import Skill from './Skill';
 import Service from './Service';
+import Contact from './Contact';
+import ContactInfo from './ContactInfo';
+import Footer from './Footer';
+import Testimonial from './Testimonial';
 export default function Herosection() {
     const [about, setAbout] = useState(true);
     const [project, setProject]=useState(true);
@@ -51,6 +55,20 @@ export default function Herosection() {
         { about ? null  :
          <Service />
         }
+        { about ? null  :
+           <Contact />
+        }
+        { about ? null  :
+           <ContactInfo />
+        }
+        { about ? null  :
+         <Testimonial />
+        }
+        { about ? null  :
+         <Footer />
+        }
+       
+
         { mywork &&
         <MyWorks project={project}  heroToggleHandler={heroToggleHandler} />
         }

@@ -1,0 +1,44 @@
+.work-background{
+    background-color: #030108;
+}
+.work-title-wraper{
+    .line{
+        height:2px;
+        width: 40px;
+        background-color: burlywood;
+    }
+    h1{
+        color:#fff;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+}
+.form-custom-class{
+    // background-color: #0f0f0f;
+     background-color:#252931;
+     border:none;
+     border-radius: 0px;
+     color: #fff;
+}
+.form-custom-class:focus{
+    background-color: #0f0f0f;
+    border-bottom: 1px solid burlywood; 
+    box-shadow: none;
+    color: #fff;
+}
+.custom-button{
+    background-color: burlywood;
+    border-radius: 0px;
+    border: none;
+    overflow: none;
+}
+.custom-button:focus{
+    background-color: burlywood;
+    border-radius: 0px;
+}
+.custom-button:hover{
+    background-color: burlywood;
+    border-radius: 0px;
+}
+.custom-label{
+    color: #fff;
+}

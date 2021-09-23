@@ -2,8 +2,23 @@
     background-color:  #030108;
 }
 .service-col-wraper{
-    
+    border: 1px solid rgb(204, 196, 196);
+    height: 260px;
+    h5{
+        color:#fff;
+        font-family: 'Josefin Sans', sans-serif;
+
+    }
+    p{
+        color: rgb(216, 206, 206);
+        font-family: 'Poppins', sans-serif;
+        font-size: 14px;
+    }
 }
+.service-col-wraper:hover{
+    border-bottom:1px solid burlywood;
+}
+
 .service-title-wraper{
     .line{
         height:2px;
@@ -19,3 +34,8 @@
         font-family: 'Poppins', sans-serif;
     }
 }
+
+.service-image{
+    color: burlywood;
+    font-size: 2rem;
+  }
