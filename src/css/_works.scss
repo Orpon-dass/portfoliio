@@ -1,17 +1,5 @@
-.work{
-    height: 100vh;
-    background-color: aqua;
-}
- .click-work-animation{
-   animation-name: workanimation;
-   animation-duration: 4s;
-   animation-timing-function: ease;
-}
-.work-trans{
-    transition: width 3s ease;
-
-}
 .my-work-title{
+    // background-color: brown;
     font-family:'Josefin Sans', sans-serif;
     h1{
         color:#1b1b1b;
@@ -21,12 +9,46 @@
     }
 }
 
-@keyframes workanimation{
-    from{
-        width:0%;
+.project-wraper{
+   height:200px;
+}
+.project-overlay{
+    background-color: rgba(117, 107, 211, 0.15);
+    backdrop-filter: blur(5px);
+    display: none !important;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    h4{
+        font-family: 'Josefin Sans', sans-serif;
     }
-    to{
-       width:100%;
+   button{
+    font-family: 'Josefin Sans', sans-serif;
+   }
+}
+.project-wraper:hover .project-overlay{
+    display: block !important;
+    // transition: all 1s ease-in-out;
+    animation-name:projectanimation;
+    animation-duration: 1s;
+}
+.project-image{
+    width: 100%;
+}
+.project-title{
+    height: 100%;
+}
+.work-button{
+    background-color: #6C63FF;
+}
 
-    }
+
+
+@keyframes projectanimation {
+   from{
+      transform: scale(0);
+     }
+    to{
+      transform: scale(1);
+     } 
 }

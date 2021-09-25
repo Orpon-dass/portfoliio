@@ -5,10 +5,14 @@ export default function HeroLeft({about,heroToggleHandler,aboutController}) {
     return (
        <div className={about ? "col-12 col-md-6 position-relative hero-left-bg click-animation" : "col-12 col-md-12 position-relative hero-left-bg after-animation-height click-animation"}>            
               { about ? null :
-               <div className="position-absolute end-0 top-0">
-                 <div className="cross-icon-div m-2 d-flex justify-content-center align-items-center">
-                   <i onClick={heroToggleHandler} className="bi bi-x-square cross-image p-2"></i>
-                 </div>
+               <div className="position-absolute">
+                  <div className="menu-btn mt-3" onClick={heroToggleHandler}>
+                    <div className="nav-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    </div>
+                  </div>
                </div>
                }
             <ParticleBackground />
