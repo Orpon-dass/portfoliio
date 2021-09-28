@@ -1,0 +1,30 @@
+.project-details-wraper{
+  height: 100vh;
+}
+.project-icon{
+    font-size: 2rem;
+    color: #1b1b1b;
+}
+.project-main{
+    height: 100%;
+    width: 100%;
+}
+.project-image{
+    img{
+        height: 250px;
+    }
+}
+.project-details{
+    h3,h6{
+        color: #1b1b1b;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+    p{
+        font-family:'Popins',sans-serif;
+        font-size: 1rem;
+        color:#898989;
+    }
+    button{
+        font-family: 'Josefin Sans', sans-serif;
+    }
+}

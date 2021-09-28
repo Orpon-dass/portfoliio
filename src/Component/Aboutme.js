@@ -5,7 +5,7 @@ export default function Aboutme() {
         <section className="about">
         <div className="container-fluid about">
             
-            <div className="row about-height d-flex align-items-center" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-out">
+            <div className="row about-height d-flex align-items-center" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out">
                 <div className="col-12">
                 <div className="row">
                 <div className="col">
@@ -16,7 +16,7 @@ export default function Aboutme() {
             </div>
                    <div className="row mt-5 mb-5  about-wraper m-1">
                       <div className="col-12 col-lg-6 mt-5 mb-5">
-                         <div className="row row-cols-1 row-cols-lg-2">
+                         <div className="row row-cols-1 row-cols-md-2">
                              <div className="col info text-center text-lg-start">
                                  <ul className="ms-3">
                                      <li className="mt-2">

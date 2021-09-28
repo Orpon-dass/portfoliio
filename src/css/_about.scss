@@ -1,11 +1,11 @@
 .about{
     // background-color: #171C32;
     background-color:#030108;
-    height: 100%;
+   // height: 100%;
 }
-.about-height{
-height: 100%;
-}
+// .about-height{
+// // height: 100%;
+// }
 .about-wraper{
     background-color:#252931;
     // background-color:#252c48;
@@ -57,7 +57,7 @@ height: 100%;
     backdrop-filter: blur(5px);
 }
 .number{
-    font-size:3rem;
+    font-size:2.5rem;
     color: rgb(235, 224, 224);
     font-family: 'Josefin Sans', sans-serif;
 }
@@ -67,8 +67,8 @@ height: 100%;
 }
 
 
-@media (min-width: 960px) {
-    .about{
-        height: 100vh;
-    }
-}
+// @media (min-width: 960px) {
+//     .about{
+//         //height: 100vh;
+//     }
+// }

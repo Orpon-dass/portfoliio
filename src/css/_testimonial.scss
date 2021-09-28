@@ -1,6 +1,5 @@
 .testimonial-wraper{
     background-color:#252931;
-    height:100%;
 }
 .testimonial-background{
     background-color:#252931;
@@ -34,8 +33,8 @@
     margin-top: -10px;
 }
 
-@media (min-width: 576px) {
-    .testimonial-wraper{
-        height:100vh;
-    }
-}
+// @media (min-width: 576px) {
+//     .testimonial-wraper{
+//         height:75vh;
+//     }
+// }

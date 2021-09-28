@@ -1,6 +1,10 @@
 import React from 'react'
 
-export default function WorkSubComponent({projectImage,projectTitle,btnLink}) {
+export default function WorkSubComponent({projectImage,projectTitle,btnLink,SetProjectToggler,setProjectSlide,sildinumber}) {
+    const projectSlide =()=>{
+        SetProjectToggler(false);
+        setProjectSlide(sildinumber)
+    }
     return (
         <div className="col mt-4">
             <div className="project-wraper position-relative m-2">
@@ -10,7 +14,7 @@ export default function WorkSubComponent({projectImage,projectTitle,btnLink}) {
                 <div className="project-overlay position-absolute">
                      <div className="project-title d-flex flex-column justify-content-center align-items-center">
                       <h4>{projectTitle}</h4>
-                      <button className="btn btn-primary work-button">See More</button>
+                      <button onClick={projectSlide} className="btn btn-primary work-button">See More</button>
                     </div>
                 </div>
             </div>

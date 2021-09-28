@@ -13,7 +13,7 @@ export default function Contact() {
             </div>
             <div className="row">
                 <div className="col-sm-12 col-md-8  mx-auto">
-                  <div className="contact-form-wraper mt-5 mb-5">
+                  <div className="contact-form-wraper mt-5 mb-5 ms-2 me-2">
                       <form>
                       <div class="form-floating mb-3">
                            <input type="text" className="form-control form-custom-class " id="floatingInput" placeholder="name@example.com" />

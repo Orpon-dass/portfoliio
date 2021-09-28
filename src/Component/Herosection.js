@@ -11,6 +11,9 @@ import Contact from './Contact';
 import ContactInfo from './ContactInfo';
 import Footer from './Footer';
 import Testimonial from './Testimonial';
+// import Fade from 'react-reveal/Fade';
+import Slide from 'react-reveal/Slide';
+
 export default function Herosection() {
     const [about, setAbout] = useState(true);
     const [project, setProject]=useState(true);
@@ -70,7 +73,9 @@ export default function Herosection() {
        
 
         { mywork &&
-        <MyWorks project={project}  heroToggleHandler={heroToggleHandler} />
+          <Slide right>
+            <MyWorks project={project}  heroToggleHandler={heroToggleHandler} />
+          </Slide>
         }
         <Test />
         </>

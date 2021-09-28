@@ -282,11 +282,6 @@
 
 .about {
   background-color: #030108;
-  height: 100%;
-}
-
-.about-height {
-  height: 100%;
 }
 
 .about-wraper {
@@ -345,7 +340,7 @@
 }
 
 .number {
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: #ebe0e0;
   font-family: 'Josefin Sans', sans-serif;
 }
@@ -355,14 +350,7 @@
   font-family: 'Josefin Sans', sans-serif;
 }
 
-@media (min-width: 960px) {
-  .about {
-    height: 100vh;
-  }
-}
-
 .about-description-height {
-  height: 100%;
   background-color: #030108;
 }
 
@@ -374,6 +362,7 @@
 .about-description-wraper p {
   color: #d8cece;
   font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
 }
 
 .about-description-wraper .line {
@@ -398,12 +387,6 @@
 
 .social-icon-background i:hover {
   color: #3f37e0;
-}
-
-@media (min-width: 576px) {
-  .about-description-height {
-    height: 100vh;
-  }
 }
 
 .skill-background {
@@ -552,7 +535,6 @@
 
 .testimonial-wraper {
   background-color: #252931;
-  height: 100%;
 }
 
 .testimonial-background {
@@ -587,9 +569,36 @@
   margin-top: -10px;
 }
 
-@media (min-width: 576px) {
-  .testimonial-wraper {
-    height: 100vh;
-  }
+.project-details-wraper {
+  height: 100vh;
+}
+
+.project-icon {
+  font-size: 2rem;
+  color: #1b1b1b;
+}
+
+.project-main {
+  height: 100%;
+  width: 100%;
+}
+
+.project-image img {
+  height: 250px;
+}
+
+.project-details h3, .project-details h6 {
+  color: #1b1b1b;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.project-details p {
+  font-family: 'Popins',sans-serif;
+  font-size: 1rem;
+  color: #898989;
+}
+
+.project-details button {
+  font-family: 'Josefin Sans', sans-serif;
 }
 /*# sourceMappingURL=index.css.map */
