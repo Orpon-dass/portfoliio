@@ -61,24 +61,26 @@ export default function MyWorks({project,heroToggleHandler}) {
             {projectSlide ===1 &&
             <Fade up>
                  <ProjectDetails
+                   btnlink={"https://reverent-gates-613b0d.netlify.app/"}
                    setProjectSlide={setProjectSlide} sildinumber={1}
                    projectImage={projectImageOne}
                    projectToggle={projectToggle}
                    projectname="Real Time Chat App"
                    clientname={"Jhon Doe"}
-                   projectdetails={"Iphone artisan direct trade ethical Austin. Fixie bespoke banh mi ugh, deep v vinyl hashtag. Tumblr gentrify keffiyeh pop-up iphone twee biodiesel. Occupy american apparel freegan cliche. Mustache trust fund 8-bit jean."}
+                   projectdetails={"HTML CSS JAVASCRIPT TAILWINDCSS REACT NODEJS EXPRESS SOCKET.IO"}
                  />
                  </Fade>
                  }
                 {projectSlide ===2 &&
                <Fade up>
                  <ProjectDetails
-                 setProjectSlide={setProjectSlide} sildinumber={2}
+                 btnlink={"https://orpon-dass.github.io/orpondass/"}
+                  setProjectSlide={setProjectSlide} sildinumber={2}
                    projectImage={projectImageTwo}
                    projectToggle={projectToggle}
-                   projectname="Portfolio"
-                   clientname={"Jany Doe"}
-                   projectdetails={" simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled"}
+                   projectname="Previous Portfolio"
+                   clientname={"Orpon dass"}
+                   projectdetails={"My old portfolio website made with HTML CSS BOOTSTRAP JAVASCRIPT."}
                  />
                  </Fade>
                  }
@@ -101,7 +103,7 @@ export default function MyWorks({project,heroToggleHandler}) {
                    setProjectSlide={setProjectSlide} sildinumber={4}
                    projectImage={projectImageFour}
                    projectToggle={projectToggle}
-                   projectname="E-commerce"
+                   projectname="Project-one"
                    clientname={"Orpon Dass"}
                    projectdetails={"simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled"}
                  />
@@ -113,7 +115,7 @@ export default function MyWorks({project,heroToggleHandler}) {
                    setProjectSlide={setProjectSlide} sildinumber={5}
                    projectImage={projectImageFive}
                    projectToggle={projectToggle}
-                   projectname="E-commerce"
+                   projectname="Project-two"
                    clientname={"Orpon Dass"}
                    projectdetails={"simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled"}
                  />
@@ -125,7 +127,7 @@ export default function MyWorks({project,heroToggleHandler}) {
                    setProjectSlide={setProjectSlide} sildinumber={6}
                    projectImage={projectImageSix}
                    projectToggle={projectToggle}
-                   projectname="E-commerce"
+                   projectname="Project-three"
                    clientname={"Orpon Dass"}
                    projectdetails={"simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled"}
                  />
@@ -137,7 +139,7 @@ export default function MyWorks({project,heroToggleHandler}) {
                    setProjectSlide={setProjectSlide} sildinumber={7}
                    projectImage={projectImageSeven}
                    projectToggle={projectToggle}
-                   projectname="E-commerce"
+                   projectname="Project-four"
                    clientname={"Orpon Dass"}
                    projectdetails={"simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled"}
                  />
@@ -149,7 +151,7 @@ export default function MyWorks({project,heroToggleHandler}) {
                    setProjectSlide={setProjectSlide} sildinumber={8}
                    projectImage={projectImageEight}
                    projectToggle={projectToggle}
-                   projectname="E-commerce"
+                   projectname="Project-five"
                    clientname={"Orpon Dass"}
                    projectdetails={"simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled"}
                  />

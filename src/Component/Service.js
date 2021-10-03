@@ -17,9 +17,9 @@ export default function Service() {
             <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3">
                    <ServiceSubcom title={"Web Design"}        icon={"bi bi-laptop"} description={"I build professional responsive websites optimized for the most popular search engines."} />
                    <ServiceSubcom title={"Web Development"}   icon={"bi bi-code-square"} description={"I build applications for different purposes using technologies that allow you more security."} />
-                   <ServiceSubcom title={"Graphic Design"}    icon={"bi bi-palette"} description={"Chuck shankle drumstick pancetta venison alcatra ham turducken short ribs frankfurter meatloaf venison alcatra."} />
+                   <ServiceSubcom title={"UI/UX Design"}    icon={"bi bi-palette"} description={"I can make a beautiful mobile app UI UX and website UI UX which increases more audiences and sales."} />
                    <ServiceSubcom title={"Branding"}          icon={"bi bi-graph-up"} description={"I work to promote your brand in partnership with the best marketing platforms today."} />
-                   <ServiceSubcom title={"Support"}           icon={"bi bi-headset"} description={"Chuck shankle drumstick pancetta venison alcatra ham turducken short ribs frankfurter meatloaf venison alcatra."} />
+                   <ServiceSubcom title={"Support"}           icon={"bi bi-headset"} description={"After delivery, if you need any support or want to add more functionality, I will help you."} />
                    <ServiceSubcom title={"E-commerce"}        icon={"bi bi-cart-check"} description={"Increase your sales with an incredible online store, full of features and functionality."} />
             </div> 
         </div>

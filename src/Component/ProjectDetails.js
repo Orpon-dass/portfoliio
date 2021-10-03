@@ -1,5 +1,5 @@
 import React from 'react'
-export default function ProjectDetails({projectToggle,projectname,clientname,projectdetails,projectImage,setProjectSlide,sildinumber}) {
+export default function ProjectDetails({projectToggle,projectname,clientname,projectdetails,projectImage,setProjectSlide,sildinumber,btnlink}) {
     const projectSlideIncrement=()=>{
        if(sildinumber===8){
         setProjectSlide(1) 
@@ -29,9 +29,11 @@ export default function ProjectDetails({projectToggle,projectname,clientname,pro
                         <div className="col-sm-12 col-md-7 mt-5 mt-md-0 project-details">
                           <h3 className="ms-2 me-2 mt-4 mt-md-0">{projectname}</h3>
                           <h6 className="ms-2 me-2">Client : {clientname}</h6>
-                          <p className="ms-2 me-2 pe-md-5 lh-base " >{projectdetails}</p>
-                          <button className="btn btn-primary m-2">See Project</button>
-                          <button onClick={projectToggle} className="btn btn-danger d-inline d-md-none m-2">Close</button>
+                          <p className="ms-2 me-2 pe-md-5 lh-base text-start" >{projectdetails}</p>
+                          <a href={btnlink} target="_blank" rel="noreferrer" >
+                            <button className="btn btn-primary m-2">See Project</button>
+                          </a>
+                          <button  onClick={projectToggle} className="btn btn-danger d-inline d-md-none m-2">Close</button>
                         </div>
                       </div>
                    </div>
