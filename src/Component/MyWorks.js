@@ -61,12 +61,12 @@ export default function MyWorks({project,heroToggleHandler}) {
             {projectSlide ===1 &&
             <Fade up>
                  <ProjectDetails
-                   btnlink={"https://reverent-gates-613b0d.netlify.app/"}
+                   btnlink={"https://sylhettution.netlify.app/"}
                    setProjectSlide={setProjectSlide} sildinumber={1}
                    projectImage={projectImageOne}
                    projectToggle={projectToggle}
                    projectname="Real Time Chat App"
-                   clientname={"Jhon Doe"}
+                   clientname={"For Practise"}
                    projectdetails={"HTML CSS JAVASCRIPT TAILWINDCSS REACT NODEJS EXPRESS SOCKET.IO"}
                  />
                  </Fade>
@@ -74,12 +74,12 @@ export default function MyWorks({project,heroToggleHandler}) {
                 {projectSlide ===2 &&
                <Fade up>
                  <ProjectDetails
-                 btnlink={"https://orpon-dass.github.io/orpondass/"}
-                  setProjectSlide={setProjectSlide} sildinumber={2}
+                   btnlink={"https://orpon-dass.github.io/orpondass/"}
+                   setProjectSlide={setProjectSlide} sildinumber={2}
                    projectImage={projectImageTwo}
                    projectToggle={projectToggle}
                    projectname="Previous Portfolio"
-                   clientname={"Orpon dass"}
+                   clientname={"For Practise"}
                    projectdetails={"My old portfolio website made with HTML CSS BOOTSTRAP JAVASCRIPT."}
                  />
                  </Fade>
@@ -88,7 +88,8 @@ export default function MyWorks({project,heroToggleHandler}) {
               {projectSlide ===3 &&
               <Fade up>
                  <ProjectDetails
-                 setProjectSlide={setProjectSlide} sildinumber={3}
+                   btnlink={"https://github.com/Orpon-dass/onlinemobileshop"}
+                   setProjectSlide={setProjectSlide} sildinumber={3}
                    projectImage={projectImageThree}
                    projectToggle={projectToggle}
                    projectname="E-commerce"

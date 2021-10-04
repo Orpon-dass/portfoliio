@@ -19,7 +19,7 @@ export default function Testimonial() {
                                 <img className="img-fluid rounded m-2" src={clientImage} alt="client" />
                                 <div>
                                 <h5 className="ms-1">Ms Mario</h5>
-                                <p className="ms-1">From UK</p>
+                                <p className="ms-1 fs-6">From UK</p>
                                 <div className="d-flex testimonial-icon">
                                 <i className="bi bi-star ms-1"></i>
                                 <i className="bi bi-star ms-1"></i>
@@ -29,7 +29,7 @@ export default function Testimonial() {
                                 </div>
                                 </div>
                             </div>
-                            <p className="ms-2 me-1 mt-2">
+                            <p className="ms-2 me-1 mt-2 fs-6">
                                 orpon is an outstanding partner who delivered great value without compromising excellence! We are looking forward to working with him in the future.  
                             </p>
                     </div>
@@ -44,7 +44,7 @@ export default function Testimonial() {
                         <img className="img-fluid rounded m-2" src={clientImagetwo} alt="client" />
                         <div>
                         <h5 className="ms-1">Simo Edwin</h5>
-                        <p className="ms-1">CEO at MRB IT</p>
+                        <p className="ms-1 fs-6">CEO at MRB IT</p>
                         <div className="d-flex testimonial-icon">
                         <i className="bi bi-star ms-1"></i>
                         <i className="bi bi-star ms-1"></i>
@@ -54,7 +54,7 @@ export default function Testimonial() {
                         </div>
                         </div>
                     </div>
-                    <p className="ms-2 me-1 mt-2">
+                    <p className="ms-2 me-1 mt-2 fs-6">
                         Very professional and unique style for a website. The design was perfect and all expectations were met very friendly and easy to work with too.  
                 </p>
                 </div>

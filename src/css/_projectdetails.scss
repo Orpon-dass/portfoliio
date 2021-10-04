@@ -11,7 +11,7 @@
 }
 .project-image{
     img{
-        height: 250px;
+        height: 190px;
     }
 }
 .project-details{
@@ -21,10 +21,23 @@
     }
     p{
         font-family:'Popins',sans-serif;
-        font-size: 1rem;
+        //font-size: 1rem;
         color:#898989;
+        width: 100%;
     }
     button{
         font-family: 'Josefin Sans', sans-serif;
     }
+}
+//new code
+.project-details-height{
+    height: 100vh;
+}
+
+@media (min-width: 960px) {
+    .project-image{
+        img{
+            height: 200px;
+        }
+    } 
 }

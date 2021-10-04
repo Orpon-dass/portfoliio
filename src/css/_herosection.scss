@@ -11,7 +11,7 @@
       height: 100vh;
   }
   .hero-left-bg{
-    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url("../image/bgone.jpg");
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url("../image/DSC_4360.JPG");
     height: 50vh;
     background-repeat: no-repeat;
     background-position: center;
@@ -67,10 +67,12 @@
 .hero-skill{
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 600;
+    color: #030108;
   }
   .hero-country{
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 1rem;
+    font-size: 1.5rem;
+    color: #030108;
   }
   .btn-custom-color{
     background-color: #6C63FF;

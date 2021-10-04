@@ -1,43 +1,54 @@
-<div className="col-12 col-lg-6 align-self-start mb-3 mt-5 mb-lg-0">
-	<div className="testimonial-details">
-		  <div className="client-details d-flex">
-			 <img className="img-fluid rounded m-2" src={clientImage} alt="client" />
-			  <div>
-			   <h5 className="ms-1">Ms Mario</h5>
-			   <p className="ms-1">From UK</p>
-			   <div className="d-flex testimonial-icon">
-			   <i className="bi bi-star ms-1"></i>
-			   <i className="bi bi-star ms-1"></i>
-			   <i className="bi bi-star ms-1"></i>
-			   <i className="bi bi-star ms-1"></i>
-			   <i className="bi bi-star ms-1"></i>
-			   </div>
-			  </div>
-		  </div>
-		  <p className="ms-2 me-1 mt-2">
-			 orpon is an outstanding partner who delivered great value without compromising excellence! We are looking forward to working with him in the future.  
-		  </p>
-	</div>
-</div>
-
-<div className="col-12 col-lg-6 align-self-end pb-5 mb-lg-0 pt-3">
-	<div className="testimonial-details">
-		  <div className="client-details d-flex">
-			 <img className="img-fluid rounded m-2" src={clientImagetwo} alt="client" />
-			  <div>
-			   <h5 className="ms-1">Simo Edwin</h5>
-			   <p className="ms-1">CEO at MRB IT</p>
-			   <div className="d-flex testimonial-icon">
-			   <i className="bi bi-star ms-1"></i>
-			   <i className="bi bi-star ms-1"></i>
-			   <i className="bi bi-star ms-1"></i>
-			   <i className="bi bi-star ms-1"></i>
-			   <i className="bi bi-star ms-1"></i>
-			   </div>
-			  </div>
-		  </div>
-		  <p className="ms-2 me-1 mt-2">
-			  Very professional and unique style for a website. The design was perfect and all expectations were met very friendly and easy to work with too.  
-		  </p>
-	</div>
-</div>
+import React from 'react'
+export default function ProjectDetails({projectToggle,projectname,clientname,projectdetails,projectImage,setProjectSlide,sildinumber,btnlink}) {
+    const projectSlideIncrement=()=>{
+       if(sildinumber===8){
+        setProjectSlide(1) 
+       }else{
+        setProjectSlide(sildinumber+1) 
+       }
+    }
+    const ProjectSlideDecrement=()=>{
+      if(sildinumber===1){
+        setProjectSlide(8) 
+       }else{
+        setProjectSlide(sildinumber-1) 
+       }
+    }
+    
+    return (
+        <div  className="row">
+           <div className="col project-details-wraper">
+               <div className="project-main position-relative">
+                   <div className="position-absolute project-main  d-flex align-items-center" >
+                      <div className="row">
+                        <div className="col-sm-12 col-md-5">
+                          <div className="project-image text-center mb-3">
+                             <img src={projectImage} alt="project" />
+                          </div>
+                        </div>
+                        <div className="col-sm-12 col-md-7 mt-5 mt-md-0 project-details">
+                          <h3 className="ms-2 me-2 mt-4 mt-md-0">{projectname}</h3>
+                          <h6 className="ms-2 me-2">Client : {clientname}</h6>
+                          <p className="ms-2 me-2 pe-md-5 text-start" >{projectdetails}</p>
+                          <a href={btnlink} target="_blank" rel="noreferrer" >
+                            <button className="btn btn-primary m-2">See Project</button>
+                          </a>
+                          <button  onClick={projectToggle} className="btn btn-danger d-inline d-md-none m-2">Close</button>
+                        </div>
+                      </div>
+                   </div>
+                   <div className="position-absolute top-50 start-0 translate-middle-y project-icon ">
+                   <i onClick={ProjectSlideDecrement} className="bi bi-caret-left"></i>
+                   </div>
+                   <div className="position-absolute top-50 end-0 translate-middle-y project-icon">
+                     <i onClick={projectSlideIncrement} className="bi bi-caret-right"></i>
+                   </div>
+                   <div onClick={projectToggle} className="position-absolute top-0 start-0  project-icon d-none d-md-block">
+                      <i className="bi bi-x-lg"></i>
+                   </div>
+               </div>
+           </div>           
+        </div>
+    )
+}
+// data-aos-easing="ease-out" data-aos="slide-up" data-aos-duration="500"

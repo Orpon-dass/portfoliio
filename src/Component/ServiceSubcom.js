@@ -8,7 +8,7 @@ export default function ServiceSubcom({description,icon,title}) {
                 <i class={icon}></i>
             </div>
             <h5 className="mt-4 ms-3" >{title}</h5>
-            <p className="ms-3 mt-4 me-2 lh-base">{description}</p>
+            <p className="ms-3 mt-4 me-2 lh-base fs-6">{description}</p>
             </div>
         </div>
     )
