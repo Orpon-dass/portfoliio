@@ -5,41 +5,6 @@
           box-sizing: border-box;
 }
 
-.container-zero-padding {
-  padding: 0;
-}
-
-.hero-class {
-  height: 100vh;
-}
-
-.hero-left-bg {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../image/DSC_4360.JPG");
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../image/DSC_4360.JPG");
-  height: 50vh;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.cross-icon-div {
-  background-color: rgba(255, 255, 255, 0.3);
-  -webkit-backdrop-filter: blur(10px);
-  height: 45px;
-  width: 45px;
-  border-radius: 30px;
-}
-
-.cross-image {
-  color: black;
-  font-size: 1.5rem;
-}
-
-.cross-image:hover {
-  color: #921111;
-  font-size: 1.5rem;
-}
-
 .hero-about-me h2 {
   color: #fff;
   font-weight: 400;
@@ -51,7 +16,7 @@
 }
 
 .hero-about-me::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
   height: 100%;
@@ -67,14 +32,6 @@
   cursor: pointer;
 }
 
-.right-part-bg {
-  background: url("../image/undraw_completed_tasks_vs6q.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 50vh;
-}
-
 .hero-skill {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 600;
@@ -88,10 +45,10 @@
 }
 
 .btn-custom-color {
-  background-color: #6C63FF;
+  background-color: #6c63ff;
   font-family: 'Josefin Sans', sans-serif;
-  font-weight: 600;
-  font-size: 1.2rem;
+  font-weight: 400;
+  font-size: 1rem;
 }
 
 .after-animation-height {
@@ -297,7 +254,7 @@
 }
 
 .about-text h1 span {
-  color: #6C63FF;
+  color: #6c63ff;
 }
 
 .test-class {
@@ -314,8 +271,9 @@
 }
 
 .title {
-  color: #94A2C7;
+  color: #94a2c7;
   font-size: 1rem;
+  cursor: pointer;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -323,6 +281,7 @@
   color: #ebe0e0;
   font-family: 'Poppins', sans-serif;
   font-size: 1rem;
+  cursor: pointer;
 }
 
 .client-icon {
@@ -607,6 +566,73 @@
 @media (min-width: 960px) {
   .project-image img {
     height: 200px;
+  }
+}
+
+.main-section {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  display: none;
+}
+
+.left-section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../image/DSC_4360.JPG");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../image/DSC_4360.JPG");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.right-section {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 100%;
+  height: 100%;
+}
+
+.main-section-mobile {
+  display: block;
+  height: 100vh;
+  position: relative;
+}
+
+.left-section-moblie {
+  height: 50%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../image/DSC_4360.JPG");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../image/DSC_4360.JPG");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.right-section-mobile {
+  height: 50%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0px;
+}
+
+@media (min-width: 960px) {
+  .main-section-mobile {
+    display: none;
+  }
+  .main-section {
+    display: block;
   }
 }
 /*# sourceMappingURL=index.css.map */

@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { motion } from 'framer-motion'
 import projectImageOne from './../image/projectone.jpg'
 import projectImageTwo from './../image/projecttwo.jpg'
 import projectImageThree from './../image/projectthree.jpg'
@@ -10,7 +11,7 @@ import projectImageEight from './../image/projecteight.jpg'
 import WorkSubComponent from './WorkSubComponent'
 import ProjectDetails from './ProjectDetails'
 import Fade from 'react-reveal/Fade';
-export default function MyWorks({project,heroToggleHandler}) {
+export default function MyWorks({project,homesectionToggleHandler}) {
   const [projectToggler,SetProjectToggler] =useState(true);
   const [projectSlide,setProjectSlide]=useState(1);
   const projectToggle =()=>{
@@ -19,12 +20,16 @@ export default function MyWorks({project,heroToggleHandler}) {
     return (
         <div className="container-fluid"> 
           { projectToggler &&
-          <Fade down>
+          <motion.div
+          initial={{opacity:0}}
+          animate={{opacity:1}}
+          transition={{duration:1,}}
+          >
             <div className="row">
              <div className="col position-relative">
              { project ? null :
                <div className="position-absolute">
-                 <div className="menu-btn mt-3" onClick={heroToggleHandler}>
+                 <div className="menu-btn mt-3" onClick={homesectionToggleHandler}>
                     <div className="nav-icon">
                     <span></span>
                     <span></span>
@@ -53,7 +58,7 @@ export default function MyWorks({project,heroToggleHandler}) {
                     <WorkSubComponent setProjectSlide={setProjectSlide} sildinumber={7} SetProjectToggler={SetProjectToggler}  projectTitle={"PROJECTNAME"} projectImage={projectImageSeven} />
                     <WorkSubComponent setProjectSlide={setProjectSlide} sildinumber={8} SetProjectToggler={SetProjectToggler}  projectTitle={"PROJECTNAME"} projectImage={projectImageEight} />
            </div>
-           </Fade>
+           </motion.div>
           }
           {
             projectToggler===false &&

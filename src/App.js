@@ -1,13 +1,17 @@
 import React,{useEffect} from 'react'
-import Herosection from "./Component/Herosection";
+import Blueprint from './Component/Blueprint';
 import AOS from "aos"
+import { AnimatePresence } from 'framer-motion';
 function App() {
   useEffect(() => {
     AOS.init();
   },[])
   return (
     <div>
-      <Herosection />
+           <AnimatePresence exitBeforeEnter >
+             <Blueprint />
+           </AnimatePresence>
+             
     </div>
   );
 }

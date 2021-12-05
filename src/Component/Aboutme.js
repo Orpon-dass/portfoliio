@@ -1,5 +1,17 @@
 import React from 'react'
-import HappyClient from './HappyClient'
+import HappyClient from './HappyClient';
+import { motion } from 'framer-motion';
+const mydetailsVarint={
+    hover:{
+        color:'#f8e112',
+        scale:1.3,
+        originX:0,
+        transition:{
+            type:'spring' ,
+            stiffness:300
+        }
+    }
+}
 export default function Aboutme() {
     return (
         <section className="about">
@@ -19,58 +31,58 @@ export default function Aboutme() {
                          <div className="row row-cols-1 row-cols-md-2">
                              <div className="col info text-center text-lg-start">
                                  <ul className="ms-3">
-                                     <li className="mt-2">
+                                     <motion.li variants={mydetailsVarint} whileHover="hover" className="mt-2">
                                          <span className="title">First Name : </span>
-                                         <span className="value">Orpon</span>
-                                     </li>
-                                     <li className="mt-2">
+                                         <span  className="value">Orpon</span>
+                                     </motion.li>
+                                     <motion.li variants={mydetailsVarint} whileHover="hover" className="mt-2">
                                          <span className="title" >Age : </span>
                                          <span className="value" >25</span>
-                                     </li>
-                                     <li className="mt-2">
+                                     </motion.li>
+                                     <motion.li variants={mydetailsVarint} whileHover="hover" className="mt-2">
                                          <span className="title" >Residence : </span>
                                          <span className="value" >Bangladesh</span>
-                                     </li>
-                                     <li className="mt-2" >
+                                     </motion.li>
+                                     <motion.li variants={mydetailsVarint} whileHover="hover" className="mt-2" >
                                          <span className="title" >Phone : </span>
                                          <span className="value" >01742824292</span>
-                                     </li>
-                                     <li className="mt-2">
+                                     </motion.li>
+                                     <motion.li variants={mydetailsVarint} whileHover="hover" className="mt-2">
                                          <span className="title" >Frelance : </span>
                                          <span className="value" >Available</span>
-                                     </li>
-                                     <li className="mt-2">
+                                     </motion.li>
+                                     <motion.li variants={mydetailsVarint} whileHover="hover" className="mt-2">
                                          <span className="title" >Skype : </span>
                                          <span className="value" >orpon_dass</span>
-                                     </li>
+                                     </motion.li>
                                  </ul>
                              </div>
                              <div className="col info text-center text-lg-start">
-                             <ul>
-                                     <li className="mt-2">
+                             <ul className="pointer">
+                                     <motion.li variants={mydetailsVarint} whileHover="hover" className="mt-2">
                                          <span className="title" >Last Name : </span>
                                          <span className="value" >Dass</span>
-                                     </li>
-                                     <li className="mt-2">
+                                     </motion.li>
+                                     <motion.li variants={mydetailsVarint} whileHover="hover" className="mt-2">
                                          <span className="title"  >Birthdate : </span>
                                          <span className="value" >25/05/1996</span>
-                                     </li>
-                                     <li className="mt-2">
+                                     </motion.li>
+                                     <motion.li variants={mydetailsVarint} whileHover="hover" className="mt-2">
                                          <span className="title" >Language : </span>
                                          <span className="value" >English</span>
-                                     </li>
-                                     <li className="mt-2" >
+                                     </motion.li>
+                                     <motion.li variants={mydetailsVarint} whileHover="hover" className="mt-2" >
                                          <span className="title" >Email : </span>
                                          <span className="value"  >orpondass@gmail.com</span>
-                                     </li>
-                                     <li className="mt-2">
+                                     </motion.li>
+                                     <motion.li variants={mydetailsVarint} whileHover="hover" className="mt-2">
                                          <span className="title" >Experience : </span>
                                          <span className="value" >3 years</span>
-                                     </li>
-                                     <li className="mt-2">
+                                     </motion.li>
+                                     <motion.li variants={mydetailsVarint} whileHover="hover" className="mt-2">
                                          <span className="title" >Address : </span>
                                          <span className="value" >Sylhet,Bangladesh</span>
-                                     </li>
+                                     </motion.li>
                                  </ul>
                              </div>
                         </div> 
